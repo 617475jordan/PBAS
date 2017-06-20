@@ -5,7 +5,7 @@
 using namespace cv;
 using namespace std;
 
-int main(int argc, char **argv)
+int main()
 {
 	std::cout << "Using OpenCV " << CV_MAJOR_VERSION << "." << CV_MINOR_VERSION << "." << CV_SUBMINOR_VERSION << std::endl;
 	/* Open video file */
@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	std::cout << "Press 'q' to quit..." << std::endl;
 	int key = 0;
 	Mat img_input;
-	capture >> img_input;
+	//capture >> img_input;
 	while (key != 'q')
 	{
 		capture >> img_input;
@@ -36,5 +36,4 @@ int main(int argc, char **argv)
 
 		key = cvWaitKey(1);
 	}
-	return 0;
-}﻿﻿
+}
